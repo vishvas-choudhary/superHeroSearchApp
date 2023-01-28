@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SuperHero Search App</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="app">
+        <div class="app-header">
+          <h2 class="app-header-title">Super <span>Hero.</span></h2>
+          <form class="app-header-search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search your superhero here..."
+              name="search"
+            />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <div class="search-list" id="search-list">
+              <!-- <div class="search-list-item">
+                <img src="./marcin-lukasik-uYpOYyJdhRE-unsplash.jpg" alt="" />
+                <p>Batman</p>
+              </div> -->
+            </div>
+          </form>
+        </div>
+
+        <div class="app-body">
+          <div class="app-body-content">
+            <div class="app-body-content-thumbnail">
+              <img src="./marcin-lukasik-uYpOYyJdhRE-unsplash.jpg" alt="" />
+            </div>
+
+            <div class="app-body-content-list">
+              <div class="name">Batman</div>
+
+              <!-- tabs head -->
+              <div class="app-body-tabs-head">
+                <button type="button" class="tab-head-single" data-id="1">
+                  <span>powerstats</span>
+                </button>
+                <button type="button" class="tab-head-single" data-id="2">
+                  <span>biography</span>
+                </button>
+                <button type="button" class="tab-head-single" data-id="3">
+                  <span>appearance</span>
+                </button>
+                <button type="button" class="tab-head-single" data-id="4">
+                  <span>connections</span>
+                </button>
+              </div>
+
+              <!-- tabs body -->
+              <div class="app-body-tabs-body">
+                <!-- powerstats tab -->
+                <ul class="tab-body-single powerstats">
+                  <li>
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>intelligence</span>
+                    </div>
+                    <span>100</span>
+                  </li>
+                  <li>
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>strength</span>
+                    </div>
+                    <span>100</span>
+                  </li>
+                  <li>
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>speed</span>
+                    </div>
+                    <span>100</span>
+                  </li>
+                  <li>
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>durability</span>
+                    </div>
+                    <span>100</span>
+                  </li>
+                  <li>
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>power</span>
+                    </div>
+                    <span>100</span>
+                  </li>
+                  <li>
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>combat</span>
+                    </div>
+                    <span>100</span>
+                  </li>
+                </ul>
+
+                <!-- biography tab -->
+                <ul class="tab-body-single biography">
+                  <li>
+                    <span>full name</span>
+                    <span>terry mcginnis</span>
+                  </li>
+                  <li>
+                    <span>Alert-Egos</span>
+                    <span>terry mcginnis</span>
+                  </li>
+                  <li>
+                    <span>Aliases</span>
+                    <span>terry mcginnis</span>
+                  </li>
+                  <li>
+                    <span>Place-Of-Birth</span>
+                    <span>terry mcginnis</span>
+                  </li>
+                  <li>
+                    <span>First-Apperance</span>
+                    <span>terry mcginnis</span>
+                  </li>
+                  <li>
+                    <span>Publisher</span>
+                    <span>terry mcginnis</span>
+                  </li>
+                </ul>
+
+                <!-- appearance -->
+                <ul class="tab-body-single appearance">
+                  <li>
+                    <span> <i class="fas fa-star"></i>gender </span>
+                    <span>Male</span>
+                  </li>
+                  <li>
+                    <span> <i class="fas fa-star"></i>race </span>
+                    <span>Human</span>
+                  </li>
+                  <li>
+                    <span> <i class="fas fa-star"></i>Height </span>
+                    <span>5' 10</span>
+                  </li>
+                  <li>
+                    <span> <i class="fas fa-star"></i>weight </span>
+                    <span>170 lb</span>
+                  </li>
+                  <li>
+                    <span> <i class="fas fa-star"></i>eye-color </span>
+                    <span>Blue</span>
+                  </li>
+                  <li>
+                    <span> <i class="fas fa-star"></i>hair-color </span>
+                    <span>Black</span>
+                  </li>
+                </ul>
+
+                <!-- connections -->
+                <ul class="tab-body-single connections">
+                  <li>
+                    <span>group--affiliation</span>
+                    <span>Batman Family, Justice League Unlimited</span>
+                  </li>
+                  <li>
+                    <span>relatives</span>
+                    <span>Batman Family, Justice League Unlimited</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
